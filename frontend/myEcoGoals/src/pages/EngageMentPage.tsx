@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { Smile, Trophy, TrendingUp, Calendar, Quote } from "lucide-react";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 import { motion } from "framer-motion";
-import confetti from "canvas-confetti";
+const confetti = (await import("canvas-confetti")).default;
 
 interface Habit {
   _id: string;
