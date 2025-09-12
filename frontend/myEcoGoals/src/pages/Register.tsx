@@ -26,12 +26,14 @@ export default function Register() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-green-50">
+    <div className="flex items-center justify-center bg-gradient-to-br from-green-100 via-white to-green-200 px-4 shadow-2xl">
       <form
         onSubmit={handleSubmit}
         className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md"
       >
-        <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
+        <h2 className="text-3xl font-extrabold text-center text-green-700 mb-2">
+          Register
+        </h2>
 
         <input
           type="text"
