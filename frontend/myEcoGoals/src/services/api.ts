@@ -31,7 +31,7 @@ export const register = async (
   avatarUrl?: string
 ) => {
   try {
-    const res = await fetch(`${API}/users`, {
+    const res = await fetch(`${API}/users/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, password, avatarUrl }),
