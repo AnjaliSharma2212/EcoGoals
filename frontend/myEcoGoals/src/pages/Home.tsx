@@ -353,6 +353,24 @@ export default function HomePage() {
           ease: "easeInOut",
         }}
       />
+      <motion.img
+        src="/birds/bee.gif"
+        alt="bee"
+        className="absolute w-20 md:w-28 z-30"
+        style={{
+          bottom: "8%", // close to ground
+          left: "25%", // adjust horizontally to sit under a tree
+        }}
+        animate={{
+          y: [0, -5, 0], // small pecking bounce
+          scale: [1, 1.05, 1],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          ease: "easeInOut",
+        }}
+      />
 
       <motion.img
         src="/birds/birdsEat.gif"
