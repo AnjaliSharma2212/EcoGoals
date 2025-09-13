@@ -3,7 +3,16 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { AvatarDropdown } from "./AvtarDropdown";
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import {
+  BarChart3,
+  CheckSquare,
+  ListTodo,
+  LogIn,
+  Menu,
+  Target,
+  UserPlus,
+  X,
+} from "lucide-react";
 
 export default function Navbar() {
   const { user, logout } = useContext(AuthContext)!;
@@ -33,32 +42,58 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           {!user ? (
             <>
-              <Link to="/login" className="group relative">
-                Login
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-900 transition-all group-hover:w-full"></span>
+              <Link
+                to="/login"
+                className="group relative flex items-center gap-1 hover:text-green-900 transition"
+              >
+                Login <LogIn size={16} />
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-900 transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link to="/register" className="group relative">
-                Register
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-900 transition-all group-hover:w-full"></span>
+
+              {/* Register Link */}
+              <Link
+                to="/register"
+                className="group relative flex items-center gap-1 hover:text-green-900 transition"
+              >
+                Register <UserPlus size={16} />
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-900 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </>
           ) : (
             <>
-              <Link to="/habits" className="group relative">
-                Set Habits
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-900 transition-all group-hover:w-full"></span>
+              <Link
+                to="/habits"
+                className="group relative flex items-center gap-1 hover:text-green-900 transition"
+              >
+                Set Habits <Target size={16} />
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-900 transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link to="/insights" className="group relative">
-                Insights
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-900 transition-all group-hover:w-full"></span>
+
+              {/* Insights */}
+              <Link
+                to="/insights"
+                className="group relative flex items-center gap-1 hover:text-green-900 transition"
+              >
+                Insights <BarChart3 size={16} />
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-900 transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link to="/progress-dashboard" className="group relative">
-                Progress
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px]  bg-green-900 transition-all group-hover:w-full"></span>
+
+              {/* Progress Dashboard */}
+              <Link
+                to="/progress-dashboard"
+                className="group relative flex items-center gap-1 hover:text-green-900 transition"
+              >
+                Progress <ListTodo size={16} />
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-900 transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link to="/tasks" className="group relative">
-                Add Tasks
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px]  bg-green-900 transition-all group-hover:w-full"></span>
+
+              {/* Tasks */}
+              <Link
+                to="/tasks"
+                className="group relative flex items-center gap-1 hover:text-green-900 transition"
+              >
+                Add Tasks <CheckSquare size={16} />
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-900 transition-all duration-300 group-hover:w-full"></span>
               </Link>
 
               <AvatarDropdown />

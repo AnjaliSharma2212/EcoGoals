@@ -143,7 +143,6 @@ export default function HomePage() {
         animate={{ x: ["-20vw", "120vw"], y: [0, -25, 0, 25, 0] }}
         transition={{ repeat: Infinity, duration: 22, ease: "linear" }}
       />
-
       <motion.img
         src="/birds/butterfly2.gif"
         alt="Butterfly"
@@ -157,25 +156,88 @@ export default function HomePage() {
           ease: "linear",
         }}
       />
-
+      <motion.img
+        src="/birds/butterfly2.gif"
+        alt="Butterfly"
+        className="absolute w-16 md:w-20 z-40"
+        style={{ bottom: "30%", left: "-20%" }}
+        animate={{ x: ["-20vw", "120vw"], y: [0, -30, 0, 30, 0] }}
+        transition={{
+          repeat: Infinity,
+          duration: 24,
+          delay: 3,
+          ease: "linear",
+        }}
+      />
+      <motion.img
+        src="/birds/butterfly3.gif"
+        alt="Butterfly"
+        className="absolute w-16 md:w-30 z-50"
+        animate={{ x: ["-20vw", "120vw"], y: [0, -30, 0, 30, 0] }}
+        style={{ bottom: "30%", left: "-20%" }}
+        transition={{
+          repeat: Infinity,
+          duration: 24,
+          delay: 3,
+          ease: "linear",
+        }}
+      />
+      <motion.img
+        src="/birds/butterfly3.gif"
+        alt="Butterfly"
+        className="absolute w-16 md:w-30 z-50"
+        animate={{ x: ["-20vw", "120vw"], y: [0, -30, 0, 30, 0] }}
+        style={{ bottom: "40%", left: "-20%" }}
+        transition={{
+          repeat: Infinity,
+          duration: 24,
+          delay: 3,
+          ease: "linear",
+        }}
+      />
       <motion.img
         src="/birds/butterfly3.gif"
         alt="Butterfly"
         className="absolute w-16 md:w-20 z-40"
-        style={{ bottom: "25%", left: "-50%" }} // relative to trees
-        transition={{ repeat: Infinity, duration: 22, ease: "linear" }}
+        style={{ bottom: "20%", left: "-40%" }}
+        animate={{
+          y: [0, -5, 0],
+          scale: [1, 1.05, 1],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          delay: 1,
+          ease: "easeInOut",
+        }}
+      />
+      <motion.img
+        src="/birds/butterfly3.gif"
+        alt="Butterfly"
+        className="absolute w-16 md:w-20 z-40"
+        style={{ bottom: "20%", left: "-40%" }}
+        animate={{
+          y: [0, -5, 0],
+          scale: [1, 1.05, 1],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          delay: 1,
+          ease: "easeInOut",
+        }}
       />
 
       <motion.img
         src="/birds/butterfly3.gif"
         alt="Butterfly"
         className="absolute w-16 md:w-30 z-50"
+        animate={{ y: [0, -20, 0, 20, 0], rotate: [0, 10, -10, 0] }}
         style={{ bottom: "20%", left: "-40%" }}
         transition={{
           repeat: Infinity,
-          duration: 24,
-          delay: 3,
-          ease: "linear",
+          duration: 7,
+          ease: "easeInOut",
         }}
       />
 
@@ -353,24 +415,6 @@ export default function HomePage() {
           ease: "easeInOut",
         }}
       />
-      <motion.img
-        src="/birds/bee.gif"
-        alt="bee"
-        className="absolute w-20 md:w-28 z-30"
-        style={{
-          bottom: "8%", // close to ground
-          left: "25%", // adjust horizontally to sit under a tree
-        }}
-        animate={{
-          y: [0, -5, 0], // small pecking bounce
-          scale: [1, 1.05, 1],
-        }}
-        transition={{
-          repeat: Infinity,
-          duration: 2,
-          ease: "easeInOut",
-        }}
-      />
 
       <motion.img
         src="/birds/birdsEat.gif"
@@ -429,8 +473,127 @@ export default function HomePage() {
           ease: "easeInOut",
         }}
       />
+      <motion.img
+        src="/plants/flower1.gif"
+        alt="Flower"
+        className="absolute bottom-0 left-[20%] w-16 z-50"
+        animate={{ rotate: [0, 2, -2, 0] }}
+        transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+      />
+      <motion.img
+        src="/plants/flower1.gif"
+        alt="Flower"
+        className="absolute bottom-0 left-[70%] w-16 z-50"
+        animate={{ scale: [1, 1.05, 1] }}
+        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+      />
+      <motion.img
+        src="/plants/flower1.gif"
+        alt="Flower"
+        className="absolute bottom-0 left-[60%] w-16 z-50"
+        animate={{ rotate: [0, 2, -2, 0] }}
+        transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+      />
+      <motion.img
+        src="/plants/flower1.gif"
+        alt="Flower"
+        className="absolute bottom-0 left-[30%] w-16 z-50"
+        animate={{ scale: [1, 1.05, 1] }}
+        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+      />
+      <motion.img
+        src="/plants/flower1.gif"
+        alt="Flower"
+        className="absolute bottom-0 left-[65%] w-16 z-50"
+        animate={{ rotate: [0, 2, -2, 0] }}
+        transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+      />
+      <motion.img
+        src="/plants/flower1.gif"
+        alt="Flower"
+        className="absolute bottom-0 left-[75%] w-16 z-50"
+        animate={{ scale: [1, 1.05, 1] }}
+        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+      />
+
+      <motion.img
+        src="/birds/bee.gif"
+        alt="Bee"
+        className="absolute w-20 md:w-28 z-40"
+        style={{
+          bottom: "6%", // slightly above flower
+          left: "20%", // near flower1
+        }}
+        animate={{
+          y: [0, -5, 0], // gentle hover
+          scale: [1, 1.05, 1],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          ease: "easeInOut",
+        }}
+      />
+
+      <motion.img
+        src="/birds/bee.gif"
+        alt="Bee"
+        className="absolute w-20 md:w-28 z-40"
+        style={{
+          bottom: "6%",
+          left: "31%", // near flower2
+        }}
+        animate={{
+          y: [0, -5, 0],
+          scale: [1, 1.05, 1],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          delay: 1,
+          ease: "easeInOut",
+        }}
+      />
+      <motion.img
+        src="/birds/bee.gif"
+        alt="Bee"
+        className="absolute w-20 md:w-28 z-40"
+        style={{
+          bottom: "6%", // slightly above flower
+          left: "70%", // near flower1
+        }}
+        animate={{
+          y: [0, -5, 0], // gentle hover
+          scale: [1, 1.05, 1],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          ease: "easeInOut",
+        }}
+      />
+
+      <motion.img
+        src="/birds/bee.gif"
+        alt="Bee"
+        className="absolute w-20 md:w-28 z-40"
+        style={{
+          bottom: "6%",
+          left: "60%", // near flower2
+        }}
+        animate={{
+          y: [0, -5, 0],
+          scale: [1, 1.05, 1],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 2,
+          delay: 1,
+          ease: "easeInOut",
+        }}
+      />
       {/* Footer */}
-      <footer className="relative z-50 bg-emerald-800 text-white py-6 px-7 text-center rounded-t-lg shadow-inner mt-20 ">
+      <footer className="relative z-100 gap-10 bg-emerald-800 text-white py-6 px-7 text-center rounded-t-lg shadow-inner mt-20 ">
         © {new Date().getFullYear()} EcoGoals. Made with 🌍 for a greener
         future.
       </footer>
