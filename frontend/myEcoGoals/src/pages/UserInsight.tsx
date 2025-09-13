@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import Profile from "./Profile";
 import ChatbotButton from "../chatBot/ChatbotButton";
+import toast from "react-hot-toast";
 
 interface HabitData {
   _id: string;
@@ -84,7 +85,7 @@ export default function UserInsightsPage() {
       if (!tags.includes(tag)) setTags((t) => [...t, tag]);
     }
 
-    alert(`You got: ${reward}`);
+    toast.success(`You got: ${reward}`);
   };
 
   return (
