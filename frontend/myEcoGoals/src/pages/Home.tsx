@@ -178,7 +178,7 @@ export default function HomePage() {
           ease: "linear",
         }}
       />
-      <h1>Hii</h1>
+
       {/* 🌳 Trees with Sitting Birds */}
       <div className="absolute bottom-9 left-0 right-0 flex justify-around items-end z-30">
         {/* Tree 1 */}
